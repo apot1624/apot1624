@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-10-27T07:56:34.564Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="CVhVNM4K7Ne8rEYaR12c" version="22.0.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-10-27T07:57:52.894Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="zImAx5LszfTSWpJvkJwb" version="22.0.8" type="github">
   <diagram name="Page-1" id="2YBvvXClWsGukQMizWep">
     <mxGraphModel dx="1195" dy="640" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -64,6 +64,69 @@
             <mxPoint x="470" y="540" as="targetPoint" />
             <Array as="points">
               <mxPoint x="520" y="420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6OYeghmCKgbhmsgCsMNX-18" value="" style="endArrow=none;html=1;rounded=0;dashed=1;dashPattern=1 2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="510" y="1430" as="sourcePoint" />
+            <mxPoint x="510" y="1010" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6OYeghmCKgbhmsgCsMNX-19" value="驱动级别发送监控进程" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="440" y="980" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6OYeghmCKgbhmsgCsMNX-20" value="检查驱动级别发送事件" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="520" y="1270" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6OYeghmCKgbhmsgCsMNX-21" value="置位驱动级别发送标志" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="520" y="1300" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6OYeghmCKgbhmsgCsMNX-22" value="触发发送中断（即对端的接收中断）" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="520" y="1330" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6OYeghmCKgbhmsgCsMNX-23" value="" style="endArrow=none;html=1;rounded=0;dashed=1;dashPattern=1 2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="1440" as="sourcePoint" />
+            <mxPoint x="279.58000000000004" y="1010" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6OYeghmCKgbhmsgCsMNX-24" value="数据发送进程" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="230" y="980" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6OYeghmCKgbhmsgCsMNX-25" value="调用驱动级别发送接口" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="280" y="1080" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6OYeghmCKgbhmsgCsMNX-26" value="申请驱动级别的发送缓存" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="275" y="1110" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6OYeghmCKgbhmsgCsMNX-27" value="向发送缓存中写入发送数据" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="280" y="1140" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6OYeghmCKgbhmsgCsMNX-28" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="1240" as="sourcePoint" />
+            <mxPoint x="510" y="1240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6OYeghmCKgbhmsgCsMNX-29" value="通知驱动级别发送监控进程" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="310" y="1210" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6OYeghmCKgbhmsgCsMNX-30" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=1;endSize=8;startSize=8;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="1070" as="sourcePoint" />
+            <mxPoint x="280" y="1190" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="330" y="1070" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6OYeghmCKgbhmsgCsMNX-31" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=1;endSize=8;startSize=8;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="510" y="1250" as="sourcePoint" />
+            <mxPoint x="510" y="1370" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="560" y="1250" />
             </Array>
           </mxGeometry>
         </mxCell>
